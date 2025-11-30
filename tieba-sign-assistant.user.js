@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Tieba Auto Sign (aiotieba)
+// @name         百度贴吧自动签到助手
 // @namespace    https://aiotieba.cc
 // @version      0.1.0
-// @description  百度贴吧自动签到：一键+补签，需手动填写BDUSS，移动端接口，详细日志。
+// @description  🚀 百度贴吧自动签到脚本：基于移动端接口，支持一键签到 + 智能补签。内置现代化暗黑风 UI 面板，可视化日志，安全稳定。
 // @match        https://tieba.baidu.com/*
 // @match        https://tiebac.baidu.com/*
 // @grant        GM_xmlhttpRequest
