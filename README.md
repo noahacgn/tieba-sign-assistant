@@ -1,8 +1,12 @@
 # 🚀 Tieba Sign Assistant (百度贴吧自动签到助手)
 
+[![GitHub stars](https://img.shields.io/github/stars/noahacgn/tieba-sign-assistant?style=social)](https://github.com/noahacgn/tieba-sign-assistant)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Script Manager](https://img.shields.io/badge/Script-Tampermonkey-green.svg)](https://www.tampermonkey.net/)
 [![Version](https://img.shields.io/badge/Version-0.1.0-blue.svg)]()
+
+> **如果觉得好用，请移步 [GitHub 仓库](https://github.com/noahacgn/tieba-sign-assistant) 点个 Star ⭐️ 支持一下！**
 
 一个基于 Tampermonkey 的百度贴吧自动签到脚本。采用移动端接口模拟，提供现代化的可视化面板，支持一键签到与智能补签功能。
 
