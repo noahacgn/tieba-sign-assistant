@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         百度贴吧自动签到助手
 // @namespace    https://aiotieba.cc
-// @version      0.1.0
+// @version      0.1.1
 // @description  🚀 百度贴吧自动签到脚本：基于移动端接口，支持一键签到 + 智能补签。内置现代化暗黑风 UI 面板，可视化日志，安全稳定。
 // @match        https://tieba.baidu.com/*
 // @match        https://tiebac.baidu.com/*
@@ -156,7 +156,8 @@
                 timeout: 15000,
             };
             if (cookie) {
-                opts.headers.Cookie = cookie;
+                opts.cookie = cookie;
+                opts.anonymous = true;
             }
             GM_xmlhttpRequest(opts);
         });
@@ -278,6 +279,7 @@
         form.append("sign", sign);
         const resp = await gmRequest("POST", `${APP_HOST}/c/c/forum/sign`, form.toString(), {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            cookie: `BDUSS=${bduss};`,
         });
         const data = parseJsonSafe(resp, `签到 ${fname}`);
         if (Number(data.error_code || 0) !== 0) {
